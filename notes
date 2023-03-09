@@ -1,0 +1,1 @@
+npm create sanity@latest -- --template get-started --project pqpd3kuq --dataset production --provider github
