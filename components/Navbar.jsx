@@ -1,6 +1,11 @@
 import React from 'react'
 import Link from 'next/link';
 import {AiOutlineShopping} from 'react-icons/ai';
+
+import {Cart} from './';
+import {useStateContext} from '../context/StateContext';
+
+
 const Navbar = () => {
   return (
     <div className="navbar-container">
@@ -8,9 +13,12 @@ const Navbar = () => {
       <Link href="/">GOAT Store</Link>
       </p>
       <button type="button"
-      className='cart-icon' onClick=""></button>
+      className='cart-icon' onClick="">
       <AiOutlineShopping />
       <span className="cart-item-qty">1</span>
+      </button>
+
+      <Cart />
     </div>
   )
 }
