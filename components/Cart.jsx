@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import Link from 'next/link';
-import {AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping} from 'react-icons/ai';
+import {AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShoppingCart} from 'react-icons/ai';
 
 import {TiDeleteOutline} from 'react-icons/ti';
 import toast from 'react-hot-toast';
@@ -22,11 +22,11 @@ const Cart = () => {
       <span className='cart-num-items'>({totalQuantities} items)</span>
       </button>
 
-      {cartItems.LENGTH < 1 && (
+      {cartItems.length < 1 && (
         <div className = "empty-cart">
-        <AiOutlineShopping size={150} />
+        <AiOutlineShoppingCart />
         <h3>Your Shopping Bag is empty</h3>
-        <Link href="/" ></Link>
+        
         </div>
       )}
       
